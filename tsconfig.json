@@ -1,0 +1,37 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": ".",
+    "incremental": false,
+    "noImplicitAny": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "commonjs",
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "target": "es5",
+    "lib": ["es2017", "dom"],
+    "rootDir": "./src",
+    "types": ["webpack-env", "node"],
+    "resolveJsonModule": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "**/dist",
+    "node_modules",
+    "**/node_modules",
+    "**/*.spec.ts",
+    "**/__tests__",
+    "**/*.test.ts",
+    "src/**/*.test.*",
+    "**/FlowType*",
+    "**/setup-jest.ts"
+  ],
+  "files": [
+    "node_modules/@akashic/akashic-engine/index.runtime.d.ts"
+  ]
+}

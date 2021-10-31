@@ -75,7 +75,7 @@ Storybookをビルドするときも同様です。
 }
 ```
 
-### Demo Project
+## Demo Project
 
 利用者の理解を助けるために@kudohamu/storybook-akashicを使ったデモプロジェクトを公開しています。  
 より実践的で詳細な使用方法は下記プロジェクトを参考にしてください。  

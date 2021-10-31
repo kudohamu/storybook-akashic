@@ -63,15 +63,17 @@ export const parameters: StorybookAkashicParameters = {
 
 ```json
 "scripts": {
-  "storybook": "start-storybook -p 6006 -s ./audio,./image,./text"
+  "storybook": "start-storybook -p 6006 -s ./game"
 }
 ```
-
+*※ 上で指定している `game` ディレクトリはAkashic Engineで使用する `audio`, `image`, `text` などのディレクトリをまとめたディレクトリです*
+  
+  
 Storybookをビルドするときも同様です。
 
 ```json
 "scripts": {
-  "build-storybook": "build-storybook -p 6006 -s ./audio,./image,./text"
+  "build-storybook": "build-storybook -p 6006 -s ./game"
 }
 ```
 

@@ -16,7 +16,7 @@ export type RenderArgs = {
 
 export type StorybookAkashicParameters<DefaultParameters extends {} = Parameters> = DefaultParameters & {
   akashic: {
-    assetIds?: string[];
+    assetIds?: (string | g.DynamicAssetConfiguration)[];
     configuration?: Partial<StorybookAkashicConfiguration>;
   };
 };

@@ -18,20 +18,20 @@ $ npm i -D @kudohamu/storybook-akashic
 ミニマルな利用であれば@storybook/reactなどと全く同じ様に、「タイトルなどのメタデータ」と「エンティティの生成に必要なパラメータを受け取ってエンティティを生成して返す関数」をstoryからエクスポートするだけでStorybookに表示することができます。
 
 ```typescript
-// Button.stories.ts
+// FilledRect.stories.ts
 
 import { Story } from '@kudohamu/storybook-akashic';
-import { Button, ButtonParameter } from '.';
 
 export default {
-  title: 'Button'
+  title: 'Demo/FilledRect'
 };
 
-const Template: Story<ButtonParameter> = (params) => {
-  return new Button({
+const Template: Story<g.FilledRectParameterObject> = (params) => {
+  return new g.FilledRect({
+    ...params,
     width: 200,
     height: 56,
-    ...params
+    cssColor: 'red'
   });
 };
 

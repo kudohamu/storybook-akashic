@@ -1,8 +1,10 @@
+import global from 'global';
 const { AE } = require('../../deps/akashic-engine-standalone-3.2.0.min.js');
 import * as engine from '@akashic/akashic-engine';
 import { RenderContext, RenderArgs, StorybookAkashicParameters, StorybookAkashicConfiguration } from './types';
 import { makeConfiguration, showError } from './utils';
 
+const { window: globalWindow, document } = global;
 const rootEl = document.getElementById('root');
 let destroyPreviousAEFunc: (() => void) | null = null;
 
@@ -41,6 +43,7 @@ export default function renderMain({ unboundStoryFn, storyContext, kind, name, s
     canvas: document.getElementById('canvas'),
     configuration,
     mainFunc: function (g: typeof engine) {
+      globalWindow.g = g;
       const scene = new g.Scene({
         // FIXME: type error of `Property 'game' does not exist on type typeof g`.
         game: (g as any).game,

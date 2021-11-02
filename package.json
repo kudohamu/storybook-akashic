@@ -1,6 +1,6 @@
 {
   "name": "@kudohamu/storybook-akashic",
-  "version": "6.3.12-beta.1",
+  "version": "6.3.12-beta.2",
   "description": "Storybook for Akashic Engine.",
   "main": "dist/cjs/client/index.js",
   "module": "dist/esm/client/index.js",

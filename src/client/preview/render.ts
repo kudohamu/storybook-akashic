@@ -48,6 +48,7 @@ export default function renderMain({ unboundStoryFn, storyContext, kind, name, s
         // FIXME: type error of `Property 'game' does not exist on type typeof g`.
         game: (g as any).game,
         assetIds: parameters.akashic.assetIds ?? [],
+        assetPaths: parameters.akashic.assetPaths ?? [],
       });
       scene.onLoad.addOnce(function () {
         render({ unboundStoryFn, storyContext, kind, name, scene });

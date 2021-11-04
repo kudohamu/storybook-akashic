@@ -1,5 +1,5 @@
 import global from 'global';
-const { AE } = require('../../deps/akashic-engine-standalone-3.2.0.min.js');
+const { AE } = require('../../deps/akashic-engine-standalone-3.2.1.min.js');
 import * as engine from '@akashic/akashic-engine';
 import { RenderContext, RenderArgs, StorybookAkashicParameters, StorybookAkashicConfiguration } from './types';
 import { makeConfiguration, showError } from './utils';

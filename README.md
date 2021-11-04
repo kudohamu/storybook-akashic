@@ -41,7 +41,7 @@ export const Default = Template.bind({});
 ### With Assets
 
 表示したいエンティティが画像などのアセットを使用する場合、対象のアセットIDがどのパスから取得できるかを@kudohamu/storybook-akashicに教えてあげる必要があります。  
-`.storybook/preview.ts` または各storyファイルからエクスポートするparametersに、必要な[GameConfiguration](https://akashic-games.github.io/reference/akashic-engine-v3/interfaces/gameconfiguration.html)と使用するassetIdを含めることで@kudohamu/storybook-akashicがアセット情報を読み取ることができるようになります。  
+`.storybook/preview.ts` または各storyファイルからエクスポートするparametersに、必要な[GameConfiguration](https://akashic-games.github.io/reference/akashic-engine-v3/interfaces/gameconfiguration.html)と使用するassetId(またはassetPaths)を含めることで@kudohamu/storybook-akashicがアセット情報を読み取ることができるようになります。  
 
 ```typescript
 // .storybook/preview.ts

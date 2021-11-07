@@ -1,5 +1,7 @@
 # @kudohamu/storybook-akashic
 
+[![CI](https://github.com/kudohamu/storybook-akashic/actions/workflows/ci.yml/badge.svg)](https://github.com/kudohamu/storybook-akashic/actions/workflows/ci.yml)
+
 @kudohamu/storybook-akashic は [Storybook](https://storybook.js.org/) を使った [Akashic Engine](https://akashic-games.github.io/) のエンティティ用のUI開発環境を提供します。  
 `g.E` や `g.Label` などのエンティティをエンティティ単位で視覚化し、さまざまな状態を確認しながらインタラクティブに開発できます。
 

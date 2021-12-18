@@ -2,10 +2,21 @@
 # yarn lockfile v1
 
 
-"@akashic/akashic-engine@^3.1.2":
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/@akashic/akashic-engine/-/akashic-engine-3.2.1.tgz#81bd69044bd5e3cff3cb3bd8421975b8ae7ab875"
-  integrity sha512-ESLIiV3cnx9oU6ezNZzXRSMnPR6YaLTRu2LboeKxMRZTdViN3jYawFHSCbl38MgImtpahgtzofjHFxQC+/melQ==
+"@akashic/akashic-engine-standalone@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@akashic/akashic-engine-standalone/-/akashic-engine-standalone-3.0.0.tgz#b706d1faf62c6257fa8fe06f5ce77e3b80219b3c"
+  integrity sha512-cy2+2ekofZaDEsnkv/Pwg6fX7+MvYlywbQJI0wAPMm/JxpDoKInor+5jLxyhPi79xmWXAd2Xykbc+Pt2BciXfQ==
+  dependencies:
+    "@akashic/akashic-engine" "3.2.2"
+    "@akashic/pdi-browser" "2.2.0"
+    "@akashic/pdi-common-impl" "0.2.0"
+    "@akashic/pdi-types" "1.3.0"
+    url-join "^4.0.1"
+
+"@akashic/akashic-engine@3.2.2":
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/@akashic/akashic-engine/-/akashic-engine-3.2.2.tgz#75027ee77c2e35c39e6124bcb663c3bdf3cfd0ad"
+  integrity sha512-7XcBwu7Fiwm0t6VesUQOYbOXV2G+ChEXsFsfh5lhmCGqOB2SmfLJEh9rCkCVtrKVh8i2xTs93L0q0ZsyFZfYcQ==
   dependencies:
     "@akashic/game-configuration" "~1.1.0"
     "@akashic/pdi-types" "~1.3.0"
@@ -19,7 +30,7 @@
   dependencies:
     "@akashic/playlog" "~3.1.0"
 
-"@akashic/game-configuration@^1.1.0", "@akashic/game-configuration@~1.1.0":
+"@akashic/game-configuration@~1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@akashic/game-configuration/-/game-configuration-1.1.0.tgz#d69f204bdec8a12ba4a7ef080e9d36460761c14c"
   integrity sha512-4u92+Xk6JHVxUNsVK0ZC5tf47RR3Eox8WFDVbcU3HdUmaNjmK1mfQqTR2Wv0qTCXxPWyRKuVcmyF8GAtjyjcuQ==
@@ -28,7 +39,21 @@
   optionalDependencies:
     es6-promise "^4.2.8"
 
-"@akashic/pdi-types@~1.3.0":
+"@akashic/pdi-browser@2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@akashic/pdi-browser/-/pdi-browser-2.2.0.tgz#f5acee828e6cdcd9d2122b1aa59b0202bc565273"
+  integrity sha512-v4AcsdjSF3lyKaUh/f70pWJL/qg5kZRXGx1jN0j+pflv7BPsGpfK4ay6BZ+PgMoQxSnx3LFHuHRL6OXswjkJpA==
+  dependencies:
+    "@akashic/trigger" "~1.0.0"
+
+"@akashic/pdi-common-impl@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@akashic/pdi-common-impl/-/pdi-common-impl-0.2.0.tgz#c5c751250c43486b64af0986e3aca5c7c76e4500"
+  integrity sha512-g0hA7RKW4uxbjJHmCJxkVKNcDGbOlnkkEgHkuo9TxziUqggBdro/xVxFTb8+0cK9zWM6KSmrXvIZZ1HXFuaShw==
+  dependencies:
+    "@akashic/trigger" "~1.0.0"
+
+"@akashic/pdi-types@1.3.0", "@akashic/pdi-types@~1.3.0":
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/@akashic/pdi-types/-/pdi-types-1.3.0.tgz#2a8dcb76a3a49b4731b6608b44f0896c945befd8"
   integrity sha512-tLMDArxGDf+VZs2yOUkxpccfjNhe+GOdxpYBHaJifk7Q/iO9uzDHad4kV4yGcEs/0bEyi48WXk9ZleAAG/1Ndw==
@@ -10139,6 +10164,11 @@ urix@^0.1.0:
   version "0.1.0"
   resolved "https://registry.npmjs.org/urix/-/urix-0.1.0.tgz"
   integrity sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
+
+url-join@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/url-join/-/url-join-4.0.1.tgz#b642e21a2646808ffa178c4c5fda39844e12cde7"
+  integrity sha512-jk1+QP6ZJqyOiuEI9AEWQfju/nB2Pw466kbA0LEZljHwKeMgd9WrAEgEGxjPDD2+TNbbb37rTyhEfrCXfuKXnA==
 
 url-loader@^4.1.1:
   version "4.1.1"

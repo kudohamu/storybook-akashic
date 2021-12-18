@@ -1,6 +1,6 @@
 import global from 'global';
-const { AE } = require('../../deps/akashic-engine-standalone-3.2.1.min.js');
-import * as engine from '@akashic/akashic-engine';
+import type * as runtime_g from "@akashic/akashic-engine/index.runtime";
+import AE from '@akashic/akashic-engine-standalone';
 import { RenderContext, RenderArgs, StorybookAkashicParameters, StorybookAkashicConfiguration } from './types';
 import { makeConfiguration, showError } from './utils';
 
@@ -42,18 +42,17 @@ export default function renderMain({ unboundStoryFn, storyContext, kind, name, s
   destroyPreviousAEFunc = AE.initialize({
     canvas: document.getElementById('canvas'),
     configuration,
-    mainFunc: function (g: typeof engine) {
+    mainFunc: function (g: typeof runtime_g) {
       globalWindow.g = g;
       const scene = new g.Scene({
-        // FIXME: type error of `Property 'game' does not exist on type typeof g`.
-        game: (g as any).game,
+        game: g.game,
         assetIds: parameters.akashic.assetIds ?? [],
         assetPaths: parameters.akashic.assetPaths ?? [],
       });
       scene.onLoad.addOnce(function () {
         render({ unboundStoryFn, storyContext, kind, name, scene });
       });
-      (g as any).game.pushScene(scene);
+      g.game.pushScene(scene);
     },
   });
 }

@@ -1,4 +1,4 @@
-import { GameConfiguration } from '@akashic/game-configuration';
+import { GameConfiguration } from '@akashic/akashic-engine-standalone';
 import * as engine from '@akashic/akashic-engine';
 import { StorybookAkashicParameters } from './types';
 

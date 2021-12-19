@@ -13,6 +13,12 @@
 $ npm i -D @kudohamu/storybook-akashic
 ```
 
+また、利用したいAkashic Engineのバージョンが入った [akashic-engine-standalone](https://github.com/akashic-games/akashic-engine-standalone) をインストールしてください。
+
+```
+$ npm i -S @akashic/akashic-engine-standalone
+```
+
 ## How to Use
 
 ### Basic Use
@@ -48,7 +54,7 @@ export const Default = Template.bind({});
 ```typescript
 // .storybook/preview.ts
 
-import { GameConfiguration } from '@akashic/game-configuration';
+import { GameConfiguration } from '@akashic/akashic-engine-standalone';
 import { StorybookAkashicParameters } from '@kudohamu/storybook-akashic';
 const gameJson: GameConfiguration = require('../game.json');
 

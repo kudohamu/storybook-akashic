@@ -1,6 +1,6 @@
 import { StoryFn, StoryContext, Parameters } from '@storybook/addons';
 import { Scene } from '@akashic/akashic-engine';
-import { GameConfiguration } from '@akashic/game-configuration';
+import { GameConfiguration } from '@akashic/akashic-engine-standalone';
 
 export type { RenderContext } from '@storybook/core';
 

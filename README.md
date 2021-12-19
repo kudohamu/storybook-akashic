@@ -16,7 +16,7 @@ $ npm i -D @kudohamu/storybook-akashic
 また、利用したいAkashic Engineのバージョンが入った [akashic-engine-standalone](https://github.com/akashic-games/akashic-engine-standalone) をインストールしてください。
 
 ```
-$ npm i -S @akashic/akashic-engine-standalone
+$ npm i -D @akashic/akashic-engine-standalone
 ```
 
 ## How to Use

@@ -1,6 +1,6 @@
 import global from 'global';
 import type * as runtime_g from "@akashic/akashic-engine/index.runtime";
-import AE from '@akashic/akashic-engine-standalone';
+import * as AE from '@akashic/akashic-engine-standalone';
 import { RenderContext, RenderArgs, StorybookAkashicParameters, StorybookAkashicConfiguration } from './types';
 import { makeConfiguration, showError } from './utils';
 
